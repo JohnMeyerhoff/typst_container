@@ -11,4 +11,4 @@ RUN chmod 755 rustup.sh
 RUN ./rustup.sh -y
 RUN rm /tmp/rustup.sh
 
-RUN ~/.cargo/bin/cargo install typst
+RUN ~/.cargo/bin/cargo install --git https://github.com/typst/typst
