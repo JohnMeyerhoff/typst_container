@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  typst_container:
+    container_name: typst_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "docker.pkg.github.com/johnmeyerhoff/typst_container/typst_container:${TAG:-latest}"
