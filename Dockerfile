@@ -1,5 +1,5 @@
-FROM rust:latest
+FROM rust:1.75
 
 WORKDIR /tmp
 ENV CARGO_NET_GIT_FETCH_WITH_CLI=true
-RUN cargo install --git https://github.com/typst/typst/tree/0.10
+RUN cargo install --git https://github.com/typst/typst typst-cli
