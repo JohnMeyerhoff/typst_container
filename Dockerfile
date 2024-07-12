@@ -1,4 +1,4 @@
-FROM rust:1.77
+FROM rust:1.79
 
 WORKDIR /tmp
 ENV CARGO_NET_GIT_FETCH_WITH_CLI=true
