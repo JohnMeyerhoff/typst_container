@@ -1,7 +1,7 @@
 
 
 FROM rust:slim AS builder
-ARG TAG=v0.13.1  # bump this when Typst ships a new release
+ARG TAG=v0.14.2  # bump this when Typst ships a new release
 
 ENV CARGO_NET_GIT_FETCH_WITH_CLI=true
 RUN apt-get update && \
